@@ -27,6 +27,47 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="banner">
+          <div className="navbar">
+            <div className="social-links">
+              <a
+                href="https://www.linkedin.com/in/jackson-hamada-017241253/"
+                target="_blank"
+              >
+                <img
+                  src="/38669.png"
+                  className="w-12 h-12 ml-5 cursor-pointer"
+                />
+              </a>
+
+              <a href="https://github.com/Sauce-Log" target="_blank">
+                <img
+                  src="/github.png"
+                  className="w-12 h-12 ml-5 cursor-pointer"
+                />
+              </a>
+            </div>
+
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="Projects.html">Projects</a>
+              </li>
+              <li>
+                <a href="Berkeley.html">Berkeley</a>
+              </li>
+              <li>
+                <a href="Contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="Resume.html">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         {children}
       </body>
     </html>
