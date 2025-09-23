@@ -7,10 +7,18 @@
 }
 
 body {
-  background: linear-gradient(-45deg, #f59ee5, #ef57e7, #9322c3, #ba6bce);
+  background: linear-gradient(-45deg, #050c0e, #081113, #0a1619, #0d1b1e);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;
+}
+
+@theme {
+  --color-bg: #2596be;
+  --color-2: #2596be;
+  --color-2-dark: #2462bf;
+  --color-3: #f4e8c1;
+  --color-4: #c04abc;
 }
 
 @keyframes gradient {
@@ -44,8 +52,14 @@ body {
   .nav-shell {
     @apply w-[95%] mx-auto my-4 px-4 py-3 flex items-center justify-between
            rounded-xl shadow-lg
-           bg-white/5 backdrop-blur
+           bg-white/10 backdrop-blur
            border border-white/10;
+  }
+
+  .item-container {
+    @apply flex items-center gap-4 px-4 py-3 mx-auto w-fit rounded-xl shadow-lg
+    bg-white/10 backdrop-blur
+    border border-white/10;
   }
 
   /* UL layout */
@@ -55,13 +69,13 @@ body {
 
   /* Each LI wraps the underline pseudo-element */
   .nav-item {
-    @apply relative;
+    @apply relative text-lg font-semibold;
   }
 
   /* The animated underline using ::after */
   .nav-item::after {
     content: "";
-    @apply absolute left-0 -bottom-2 h-[3px] w-0 bg-amber-500 transition-all duration-300;
+    @apply absolute left-0 -bottom-2 h-[3px] w-0 bg-gradient-to-r from-2 to-2-dark transition-all duration-300;
   }
   .nav-item:hover::after {
     @apply w-full;
@@ -69,11 +83,11 @@ body {
 
   /* The link text with gradient + background-position animation */
   .nav-link {
-    @apply uppercase tracking-wide opacity-90
+    @apply tracking-wide opacity-90
            bg-clip-text text-transparent
            transition-[background-position,opacity] duration-500;
     /* 200% width gradient that slides on hover */
-    background-image: linear-gradient(to right, #ff8d0c 50%, #e5e5e5 50%);
+    background-image: linear-gradient(to right, #2596be 50%, #f4e8c1 50%);
     background-size: 200% 100%;
     background-position: right;
   }
@@ -83,12 +97,12 @@ body {
 
   .nav-link-active {
     @apply bg-clip-text text-transparent
-           bg-gradient-to-r from-amber-700 to-amber-500
+           bg-gradient-to-r from-2 to-2-dark
            font-semibold;
   }
 
   /* Social icon sizing/hover */
   .social-icon {
-    @apply w-8 h-8 md:w-10 md:h-10 opacity-90 hover:opacity-100 transition-opacity;
+    @apply w-8 h-8 md:w-10 md:h-10 opacity-75 hover:opacity-100 hover:scale-105 transition-opacity;
   }
 }

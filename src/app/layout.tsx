@@ -1,12 +1,20 @@
 // app/layout.tsx
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Roboto_Slab } from "next/font/google";
+import { Rubik } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
+import ParticleBackground from "./components/bg";
 
-const robotoSlab = Roboto_Slab({
-  variable: "--font-roboto-slab",
+export const navFont = Rubik({
+  variable: "--font-nav",
   subsets: ["latin"],
+  weight: ["600"],
+});
+
+export const mainFont = Rubik({
+  variable: "--font-main",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -19,9 +27,13 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${robotoSlab.variable} antialiased`}>
+      <body>
+        <ParticleBackground />
         {/* Sticky is a nice default for navs; switch to fixed if you want it always visible */}
-        <div className="sticky top-0 z-50">
+        <div
+          className="sticky top-0 z-50"
+          style={{ fontFamily: navFont.style.fontFamily }}
+        >
           <Navbar />
         </div>
 
