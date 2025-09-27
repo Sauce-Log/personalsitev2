@@ -60,9 +60,9 @@ export default function ParticleBackground() {
         // gradient.addColorStop(1, `rgba(37, 150, 190, 0)`); // Transparent edge
 
         // Alternate "firefly" style
-        gradient.addColorStop(0, `rgba(37, 150, 190, 0.8)`); // Bright center
-        gradient.addColorStop(0.3, `rgba(37, 150, 190, 0.4)`); // Medium glow
-        gradient.addColorStop(0.7, `rgba(37, 150, 190, 0.1)`); // Soft glow
+        gradient.addColorStop(0.0, `rgba(192, 74, 188, 0.8)`); // Bright center
+        gradient.addColorStop(0.3, `rgba(192, 74, 188, 0.4)`); // Medium glow
+        gradient.addColorStop(0.7, `rgba(192, 74, 188, 0.0)`); // Soft glow
         gradient.addColorStop(1, `rgba(37, 150, 190, 0)`); // Transparent edge
 
         // Apply the gradient

@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ParticleBackground />
-        {/* Sticky is a nice default for navs; switch to fixed if you want it always visible */}
+        {/*switch to fixed if you want it always visible */}
         <div
           className="sticky top-0 z-50"
           style={{ fontFamily: navFont.style.fontFamily }}

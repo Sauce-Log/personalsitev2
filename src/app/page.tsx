@@ -4,10 +4,20 @@ import { navFont, mainFont } from "@/app/layout";
 export default function Home() {
   return (
     <div
-      className="item-container"
+      className="min-h-screen w-full px-4 py-8"
       style={{ fontFamily: mainFont.style.fontFamily }}
     >
-      <p style={{ fontWeight: 700, fontSize: "48px" }}>Hello World</p>
+      {/* Hero Section */}
+      <section className="max-w-4xl mx-auto text-center mb-16">
+        <div className="item-container">
+          <h1
+            className="text-6xl md:text-7xl font-bold"
+            style={{ color: "var(--color-text)" }}
+          >
+            Jackson Hamada
+          </h1>
+        </div>
+      </section>
     </div>
   );
 }
