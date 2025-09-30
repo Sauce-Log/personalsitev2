@@ -8,13 +8,15 @@ import ParticleBackground from "./components/bg";
 export const navFont = Rubik({
   variable: "--font-nav",
   subsets: ["latin"],
-  weight: ["600"],
+  weight: ["500"],
+  fallback: ["system-ui"],
 });
 
 export const mainFont = Rubik({
   variable: "--font-main",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  fallback: ["system-ui"],
 });
 
 export const metadata: Metadata = {

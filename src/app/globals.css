@@ -50,7 +50,7 @@ body {
 @layer components {
   /* Container that gives us the frosted/soft backdrop and spacing */
   .nav-shell {
-    @apply w-[95%] mx-auto my-4 px-4 py-3 flex items-center justify-between
+    @apply w-fit mx-auto my-4 px-4 py-3 flex items-center justify-between
            rounded-xl shadow-lg
            bg-white/10 backdrop-blur
            border border-white/10;
@@ -64,12 +64,12 @@ body {
 
   /* UL layout */
   .nav-list {
-    @apply flex items-center gap-8;
+    @apply flex items-center gap-[24px] pl-[24px];
   }
 
   /* Each LI wraps the underline pseudo-element */
   .nav-item {
-    @apply relative text-lg font-semibold;
+    @apply relative text-xl font-medium;
   }
 
   /* The animated underline using ::after */

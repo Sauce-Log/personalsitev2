@@ -11,7 +11,7 @@ export default function Home() {
       <section className="max-w-4xl mx-auto text-center mb-16">
         <div className="item-container">
           <h1
-            className="text-6xl md:text-7xl font-bold"
+            className="text-5xl md:text-6xl font-normal"
             style={{ color: "var(--color-text)" }}
           >
             Jackson Hamada
