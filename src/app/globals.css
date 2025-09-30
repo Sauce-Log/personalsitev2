@@ -75,7 +75,7 @@ body {
   /* The animated underline using ::after */
   .nav-item::after {
     content: "";
-    @apply absolute left-0 -bottom-2 h-[3px] w-0 bg-gradient-to-r from-accent to-accent-dark transition-all duration-300;
+    @apply absolute left-0 -bottom-2 h-[3px] w-0 bg-gradient-to-r from-accent to-accent-dark transition-all duration-800;
   }
   .nav-item:hover::after {
     @apply w-full;
@@ -83,7 +83,7 @@ body {
 
   /* The link text with gradient + background-position animation */
   .nav-link {
-    @apply tracking-wide opacity-90
+    @apply tracking-wide opacity-100
            bg-clip-text text-transparent
            transition-[background-position,opacity] duration-500;
     /* 200% width gradient that slides on hover */
