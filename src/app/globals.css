@@ -57,7 +57,7 @@ body {
   }
 
   .item-container {
-    @apply flex items-center gap-4 px-8 py-4 mx-auto w-fit rounded-xl shadow-lg
+    @apply flex flex-col items-center gap-4 px-8 py-4 mx-auto w-fit rounded-xl shadow-lg
     bg-white/10 backdrop-blur
     border border-white/10;
   }
