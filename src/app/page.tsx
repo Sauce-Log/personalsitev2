@@ -10,16 +10,10 @@ export default function Home() {
       {/* Hero Section */}
       <section className="max-w-4xl mx-auto text-center mb-16">
         <div className="item-container">
-          <h1
-            className="text-4xl md:text-5xl font-normal"
-            style={{ color: "var(--color-text)" }}
-          >
+          <h1 className="text-4xl md:text-5xl font-normal bg-clip-text bg-gradient-to-r from-accent to-accent-dark text-transparent">
             Jackson Hamada
           </h1>
-          <p
-            className="text-sm md:text-base font-normal"
-            style={{ color: "var(--color-text)" }}
-          >
+          <p className="text-sm md:text-base font-normal">
             Recent UC Berkeley graduate pursuing a career in software
             engineering to leverage my eagerness to learn and problem solving
             nature to tackle interesting problems and build software to make
